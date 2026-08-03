@@ -1,42 +1,105 @@
-# Jenkins CI/CD Pipeline Project
+# 🚀 Jenkins CI/CD Pipeline
 
-## Overview
+A Jenkins-based CI/CD pipeline demonstrating automated Build, Test, and Deploy stages using Pipeline as Code with a Jenkinsfile.
 
-This project demonstrates a basic CI/CD pipeline implemented using Jenkins. The pipeline automates the Build, Test, and Deploy stages to simulate a continuous integration workflow.
+## 📌 Overview
 
-## Tech Stack
+This project demonstrates a basic Continuous Integration workflow implemented using Jenkins.
 
-* Jenkins
-* GitHub
-* Groovy Pipeline
-* Java 21
+The pipeline automates three stages:
 
-## Features
+Build → Test → Deploy
 
-* Automated Build Stage
-* Automated Test Stage
-* Automated Deploy Stage
-* Pipeline as Code using Jenkinsfile
-* Continuous Integration Workflow
+The project uses a Jenkinsfile to define the pipeline as code and GitHub as the source code repository.
 
-## Pipeline Stages
+## 🛠️ Tech Stack
 
-1. Build
-2. Test
-3. Deploy
+| Technology | Purpose |
+|------------|---------|
+| Jenkins | CI/CD automation |
+| GitHub | Source code management |
+| Groovy | Jenkins Pipeline scripting |
+| Java 21 | Application runtime |
 
-## Project Structure
+## 🚀 Features
 
+- Automated Build Stage
+- Automated Test Stage
+- Automated Deploy Stage
+- Pipeline as Code using Jenkinsfile
+- GitHub integration
+- Continuous Integration workflow
+
+## 🔄 Pipeline Stages
+
+### 1. Build
+
+Builds the application as part of the CI pipeline.
+
+### 2. Test
+
+Runs the configured testing stage to validate the build.
+
+### 3. Deploy
+
+Executes the deployment stage after successful previous stages.
+
+## 📂 Project Structure
+
+jenkins-cicd-pipeline/
 ├── Jenkinsfile
 ├── README.md
 └── screenshots/
+    └── jenkins-success-build.png
 
-## Build Status
+## ⚙️ Pipeline Flow
 
-Successfully executed Jenkins Pipeline with all stages completed.
+GitHub
+   ↓
+Jenkins
+   ↓
+Build
+   ↓
+Test
+   ↓
+Deploy
+   ↓
+SUCCESS
+
+## 📋 Jenkinsfile
+
+The Jenkinsfile defines the CI/CD pipeline stages as code, making the pipeline configuration version-controlled and repeatable.
+
+## ✅ Build Status
+
+The Jenkins pipeline was successfully executed with all configured stages completed.
 
 Status: SUCCESS
 
-## Pipeline Execution Screenshot
+## 📸 Pipeline Execution
 
 ![Jenkins Build Success](screenshots/jenkins-success-build.png)
+
+## 🎯 Skills Demonstrated
+
+- Jenkins CI/CD
+- Pipeline as Code
+- Jenkinsfile
+- Groovy Pipeline
+- GitHub integration
+- Automated Build
+- Automated Testing
+- Automated Deployment
+- Continuous Integration
+
+## 👨‍💻 Author
+
+Nitin Narnaware
+
+DevOps & Cloud Engineer
+
+LinkedIn: https://www.linkedin.com/in/nitin-narnaware-devops/
+
+Portfolio: https://nitin-narnaware-devops-portfolio.vercel.app
+
+GitHub: https://github.com/narnawarenitin1998-bit
