@@ -12,7 +12,7 @@ stages {
 
    stage('Build') {
     steps {
-        sh 'docker build -t jenkins-demo .'
+        bat 'docker build -t jenkins-demo .'
     }
 }
     stage('Test') {
