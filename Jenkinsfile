@@ -21,10 +21,10 @@ stages {
         }
     }
 
-    stage('Deploy') {
-        steps {
-            echo 'Deploying application...'
-        }
+  stage('Deploy') {
+    steps {
+        bat 'docker rm -f jenkins-demo-container || exit /b 0'
+        bat 'docker run -d --name jenkins-demo-container -p 8085:80 jenkins-demo'
     }
 }
 
