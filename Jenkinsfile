@@ -10,12 +10,11 @@ stages {
         }
     }
 
-    stage('Build') {
-        steps {
-            echo 'Building project...'
-        }
+   stage('Build') {
+    steps {
+        sh 'docker build -t jenkins-demo .'
     }
-
+}
     stage('Test') {
         steps {
             echo 'Running tests...'
